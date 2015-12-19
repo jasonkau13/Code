@@ -30,5 +30,22 @@
 <p class="p2"><br></p>
 <p class="p2"><br></p>
 <p class="p1">&lt;/html&gt;</p>
+
+/* Nevin's Section */
+
+<form>
+  Name:<br>
+  <input type="text" id="name" />
+  <br>
+  <button onclick="greetingsFunc()"></button>
+</form>
+
+<script type="text/javascript">
+  function greetingsFunc() {
+    var name1=document.getElementById('name').value;
+    System.out.println("Welcome to the website, " + name1 + "!");
+  }
+</script>
+
 </body>
 </html>
