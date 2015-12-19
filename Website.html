@@ -34,16 +34,20 @@
 /* Nevin's Section */
 
 <form>
-  Name:<br>
+  What is your name?<br>
   <input type="text" id="name" />
   <br>
-  <button onclick="greetingsFunc()"></button>
+  <button onclick="greetingsFunc()">Submit</button>
 </form>
-
+<p id="welmsg"></p>
 <script type="text/javascript">
   function greetingsFunc() {
-    var name1=document.getElementById('name').value;
-    System.out.println("Welcome to the website, " + name1 + "!");
+    var x;
+    var name1=document.getElementById("name").value;
+    if (name1 != null) {
+      x="Welcome to the website, " + name1 + "!";
+      document.getElementById("welmsg").innerHTML = x;
+    }
   }
 </script>
 
